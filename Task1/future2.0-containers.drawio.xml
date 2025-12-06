@@ -1,0 +1,194 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.1">
+  <diagram id="Future2.0-Containers" name="Future2.0-Containers">
+    <mxGraphModel dx="4369" dy="2451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="shape=actor;whiteSpace=wrap;html=1;" value="Бизнес-пользователь домена" vertex="1">
+          <mxGeometry height="60" width="140" x="-170" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="shape=actor;whiteSpace=wrap;html=1;" value="Дата-сайентист / аналитик" vertex="1">
+          <mxGeometry height="60" width="180" x="675" y="-230" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="shape=actor;whiteSpace=wrap;html=1;" value="Оператор клиники" vertex="1">
+          <mxGeometry height="60" width="140" x="10" y="-140" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Операционные медицинские системы (ClinicCore)" vertex="1">
+          <mxGeometry height="60" width="200" x="-20" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Legacy DWH (SQL Server 2008)" vertex="1">
+          <mxGeometry height="60" width="200" x="-280" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Интеграционная шина (ESB, Apache Camel)" vertex="1">
+          <mxGeometry height="60" width="200" x="-280" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Финтех-сервисы (FintechCore)" vertex="1">
+          <mxGeometry height="60" width="200" x="1020" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Операционные ИИ-сервисы (AIServices)" vertex="1">
+          <mxGeometry height="60" width="200" x="1770" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Партнёры (фарма, производители оборудования)" vertex="1">
+          <mxGeometry height="60" width="200" x="1550" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;" value="Платформа данных Future 2.0" vertex="1">
+          <mxGeometry height="720" width="1240" x="180" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="11" style="rounded=1;whiteSpace=wrap;html=1;" value="Сервисы загрузки данных (Ingestion)&#xa;Batch/stream загрузка из DWH, операционки и партнёров" vertex="1">
+          <mxGeometry height="40" width="370" x="110" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="11" style="rounded=1;whiteSpace=wrap;html=1;" value="Стриминговая платформа (Streaming)&#xa;Событийные данные в реальном времени" vertex="1">
+          <mxGeometry height="50" width="290" x="890" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="11" style="rounded=1;whiteSpace=wrap;html=1;" value="Data Lakehouse&#xa;Хранение сырых и подготовленных данных по доменам" vertex="1">
+          <mxGeometry height="60" width="530" x="320" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="11" style="rounded=1;whiteSpace=wrap;html=1;" value="Доменные витрины данных (DomainMarts)&#xa;Клиника, Финтех, ИИ, Партнёры" vertex="1">
+          <mxGeometry height="70" width="430" x="380" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="11" style="rounded=1;whiteSpace=wrap;html=1;" value="BI / Портал самообслуживания (SelfService)&#xa;Отчёты и дашборды, self-service" vertex="1">
+          <mxGeometry height="70" width="370" x="100" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="11" style="rounded=1;whiteSpace=wrap;html=1;" value="API/Сервисы доступа к данным (DataAPI)&#xa;REST/GraphQL для финтех, ИИ и партнёров" vertex="1">
+          <mxGeometry height="80" width="340" x="770" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="11" style="rounded=1;whiteSpace=wrap;html=1;" value="Каталог и управление данными (Catalog)&#xa;Реестр наборов, метаданные, lineage" vertex="1">
+          <mxGeometry height="70" width="250" x="10" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="11" style="rounded=1;whiteSpace=wrap;html=1;" value="Сервис управления доступом и политиками (Security)&#xa;RBAC/ABAC, маскирование, аудит" vertex="1">
+          <mxGeometry height="80" width="340" x="880" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="31" edge="1" parent="11" source="12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="14" value="Batch/stream загрузка сырых и очищенных данных">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="200" />
+              <mxPoint x="520" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="32" edge="1" parent="11" source="13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="14" value="Событийные данные почти в реальном времени">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="135" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="33" edge="1" parent="11" source="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="15" value="Формирование доменных витрин">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="585" y="430" />
+              <mxPoint x="585" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="34" edge="1" parent="11" source="15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="16" value="Агрегированные данные для отчётов (S1)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="595" y="560" />
+              <mxPoint x="340" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="35" edge="1" parent="11" source="15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="17" value="Доменные data products (S2, S3, S4)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="560" />
+              <mxPoint x="990" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="36" edge="1" parent="11" source="16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="18" value="Использование метаданных и словарей показателей">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="135" y="560" />
+              <mxPoint x="135" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="37" edge="1" parent="11" source="18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="14" value="Каталогизация наборов данных, lineage">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="38" edge="1" parent="11" source="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="16" value="Политики доступа и маскирование (S5)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="950" y="590" />
+              <mxPoint x="500" y="590" />
+              <mxPoint x="500" y="645" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="39" edge="1" parent="11" source="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="17" value="Политики доступа и маскирование (S5)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="540" />
+              <mxPoint x="1100" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="40" edge="1" parent="11" source="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="14" value="Управление правами на таблицы и объекты (S5)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1180" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="16" value="Строит отчёты и дашборды (S1)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="14" value="Использует датасеты для ИИ-моделей (S3)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="5" value="Работает с мед. картами и историями болезни">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="12" value="Мед. события, справочники, статусы услуг (S1, S3)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24" edge="1" parent="1" source="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="12" value="Транзакции, кредиты, счета (S1, S2)">
+          <mxGeometry relative="1" x="-0.4903" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="28" edge="1" parent="1" source="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="12" value="Репликация исторических данных в Lakehouse (миграция)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="29" edge="1" parent="1" source="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="7" value="Существующие интеграции">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="30" edge="1" parent="1" source="7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="12" value="Передача данных в платформу">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25" edge="1" parent="1" source="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="17" value="Признаки и агрегаты для моделей (S3)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1650" y="840" />
+              <mxPoint x="1650" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="26" edge="1" parent="1" source="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="17" value="Агрегированные показатели клиентов и продуктов (S2)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="27" edge="1" parent="1" source="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="17" value="Отчёты и агрегированные показатели (S4)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1650" y="890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
